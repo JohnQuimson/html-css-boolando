@@ -28,7 +28,7 @@ body {
 Header
 -----------------
 */
-.top-bar {
+/* .top-bar {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ Header
 
 .top-bar img {
   height: 30px;
-}
+} */
 
 /* 
 -----------------
@@ -121,10 +121,18 @@ h5 {
   background-color: white;
 }
 
-.foto:hover {
+.foto-nonhover:hover {
   opacity: 0;
 }
 
 .like:hover {
   color: red;
+}
+
+.foto-hover {
+  display: none;
+}
+
+.foto-hover:hover {
+  display: block;
 }
