@@ -121,18 +121,18 @@ h5 {
   background-color: white;
 }
 
-.foto-nonhover:hover {
-  opacity: 0;
-}
-
 .like:hover {
   color: red;
 }
 
-.foto-hover {
+.foto .foto-nonhover {
+  display: block;
+}
+
+.foto:hover .foto-nonhover {
   display: none;
 }
 
-.foto-hover:hover {
-  display: block;
+.foto-hover {
+  display: none;
 }
