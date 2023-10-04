@@ -15,6 +15,13 @@ Reset
 Common
 -----------------
 */
+li a {
+  list-style-type: none;
+}
+
+body {
+  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 /* 
 -----------------
@@ -43,7 +50,6 @@ Main
   width: 60%;
   margin: 0 auto;
   flex-wrap: wrap;
-  line-height: 0;
   gap: 20px;
   margin-top: 5vh;
 }
@@ -55,4 +61,25 @@ Main
 
 .box img {
   width: 100%;
+}
+
+.brand {
+  font-size: 14px;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+.prezzo {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.barrato {
+  color: black;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: line-through;
 }
