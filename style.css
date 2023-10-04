@@ -57,6 +57,7 @@ Main
 .box {
   border: 1px solid black;
   width: calc((100% - 40px) / 3);
+  position: relative;
 }
 
 .box img {
@@ -82,4 +83,48 @@ h5 {
   font-size: 14px;
   font-weight: 100;
   text-decoration: line-through;
+}
+
+.foto {
+  position: relative;
+}
+
+.tag {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 100px;
+}
+
+/* Riquadri */
+.riquadro {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px;
+}
+
+#materiale {
+  background-color: green;
+}
+
+#sconto {
+  background-color: #ff0000;
+}
+
+.like {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  padding: 10px;
+  background-color: white;
+}
+
+.foto:hover {
+  opacity: 0;
+}
+
+.like:hover {
+  color: red;
 }
