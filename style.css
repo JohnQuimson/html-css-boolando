@@ -45,7 +45,6 @@ Main
 -----------------
 */
 .container {
-  border: 1px solid red;
   display: flex;
   width: 60%;
   margin: 0 auto;
@@ -55,7 +54,6 @@ Main
 }
 
 .box {
-  border: 1px solid black;
   width: calc((100% - 40px) / 3);
   position: relative;
 }
@@ -125,14 +123,24 @@ h5 {
   color: red;
 }
 
-.foto .foto-nonhover {
+/* Hover foto */
+
+.foto-nonhover {
+  /* di default mostro foto-nonhover */
   display: block;
 }
 
-.foto:hover .foto-nonhover {
+.foto-hover {
+  /* di default nascondo la seconda foto */
   display: none;
 }
 
-.foto-hover {
+.foto:hover .foto-nonhover {
+  /* all'hover del contenitore nascondo la prima img */
   display: none;
+}
+
+.foto:hover .foto-hover {
+  /* se faccio hover del contenitore, mostro la seconda */
+  display: block;
 }
