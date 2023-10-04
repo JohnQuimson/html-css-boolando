@@ -1,5 +1,58 @@
+/* 
+-----------------
+Reset
+-----------------
+*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* 
+-----------------
+Common
+-----------------
+*/
+
+/* 
+-----------------
+Header
+-----------------
+*/
+.top-bar {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6900;
+}
+
+.top-bar img {
+  height: 30px;
+}
+
+/* 
+-----------------
+Main
+-----------------
+*/
+.container {
+  border: 1px solid red;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  line-height: 0;
+  gap: 20px;
+  margin-top: 5vh;
+}
+
+.box {
+  border: 1px solid black;
+  width: calc((100% - 40px) / 3);
+}
+
+.box img {
+  width: 100%;
 }
